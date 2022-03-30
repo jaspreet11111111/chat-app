@@ -40,7 +40,7 @@ const io = socket(server, {
 
 app.get("*",function(_,res){
   res.sendFile(
-    path.join(__dirname,"../public/build/index.html"),
+    path.join(__dirname,"./public/build/index.html"),
     function(err){
       if(err){
         res.status(500).send(err);
